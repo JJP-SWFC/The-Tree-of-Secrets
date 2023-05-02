@@ -228,3 +228,30 @@ tooltip(){return "Secrets"},
         },
     achievementPopups: false,
 },)
+
+addLayer("credits", {
+    symbol: "C",
+    startData() {return {
+        unlocked: true,
+    }},
+    infoboxes :{
+        ideas: {
+            title: "Ideas",
+            body: "Thank you to the following people who have given me ideas that I have then used",
+        },
+        players: {
+            title: "Feedback",
+            body: "Thank you to the following people who have given me helpful feedback on the game",
+        }
+    },
+    row: "side",
+    position: 2,
+    tabFormat: [
+        ["infobox", "ideas"],
+        ["raw-html", "<h2><b>Acamaeda</b></h2> - Inspired 2 of the achievements"],
+        ["raw-html","<br><br><br><br>"],
+        ["infobox", "players"],
+        ["raw-html", ""]
+    ],
+    tooltip: "Credits",
+})

@@ -53,3 +53,7 @@ h1, h2, h3, b, input {
 	display: inline-block;
 	vertical-align: 2px;
 }
+
+#credits {
+	margin-top: 10px;
+}
